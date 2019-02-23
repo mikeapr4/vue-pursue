@@ -1,6 +1,6 @@
 {
   "name": "vue-pursue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue.js or Vuex Plugin to aid Reactivity Tracing / Analysis",
   "main": "dist/vue-pursue.js",
   "module": "src/vue-pursue.js",

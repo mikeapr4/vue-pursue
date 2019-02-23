@@ -90,4 +90,4 @@ const dualPlugin = function(store) {
 };
 dualPlugin.install = install;
 
-export default dualPlugin;
+module.exports = dualPlugin;
