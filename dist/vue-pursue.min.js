@@ -1,5 +1,5 @@
 /*!
- * Vue-Pursue v0.1.1
+ * Vue-Pursue v0.1.2
  * https://github.com/mikeapr4/vue-pursue
  * @license MIT
  */
