@@ -1,0 +1,62 @@
+{
+  "name": "vue-pursue",
+  "version": "0.1.0",
+  "description": "Vue.js or Vuex Plugin to aid Reactivity Tracing / Analysis",
+  "main": "dist/vue-pursue.js",
+  "module": "src/vue-pursue.js",
+  "scripts": {
+    "pretest": "eslint src/*.js test/*.js",
+    "test": "karma start",
+    "debug": "karma start --no-single-run --reporters kjhtml --browsers Chrome",
+    "build": "webpack --mode=development",
+    "postbuild": "uglifyjs dist/vue-pursue.js -cmo dist/vue-pursue.min.js --comments",
+    "prettier": "prettier --print-width 100 --write src/*.js test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeapr4/vue-pursue.git"
+  },
+  "keywords": [
+    "vue",
+    "reactivity",
+    "debug",
+    "trace",
+    "analysis"
+  ],
+  "author": "Michael Gallagher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeapr4/vue-pursue/issues"
+  },
+  "homepage": "https://github.com/mikeapr4/vue-pursue#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-istanbul": "^5.1.1",
+    "eslint": "^5.14.1",
+    "jasmine-core": "^3.3.0",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-coverage": "^1.1.1",
+    "karma-coveralls": "^2.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.5",
+    "prettier": "^1.16.4",
+    "uglify-js": "^3.0.9",
+    "vue": "^2.6.7",
+    "vue-template-compiler": "^2.6.7",
+    "vuex": "^3.1.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "peerDependencies": {
+    "vue": ">= 2.0.0"
+  },
+  "files": [
+    "dist/*.js"
+  ]
+}
